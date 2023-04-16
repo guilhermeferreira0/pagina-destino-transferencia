@@ -53,6 +53,12 @@ button {
     margin-right: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.298);
     font-weight: bold;
+    transition: all .4s ease; 
+}
+
+button:hover {
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 div.button .green{
@@ -109,7 +115,7 @@ section {
 }
 
 .col3 p {
-    width: 250px;
+    width: 200px;
 }
 
 .col3 img {
@@ -149,6 +155,66 @@ footer ul li {
 
 .icons {
     margin: 15px;
+}
+
+@media screen and (max-width: 1160px) {
+    footer > img{
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 964px) {
+    .section-img-computer {
+        flex-direction: column;
+    }
+
+    .section-img-computer img {
+        width: 37.5rem;
+        margin: 0;
+    }
+
+    .section-row3 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .section-row3 div {
+        margin-right: 0;
+    }
+    
+    .clipboard img {
+        width: 37.5rem; 
+    }
+
+    .col3 {
+        flex-direction: column;
+    }
+
+    .images {
+        flex-direction: column;
+    }
+
+    .images img {
+        margin-bottom: 50px;
+    }
+
+    .supercharge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer img {
+        margin-right: 40px;
+    }
+    footer ul li{
+        margin-right: 20px;
+    }
+
+    .icons img{
+        margin: 0;
+        margin-right: 10px;
+    }
 }
 
 
